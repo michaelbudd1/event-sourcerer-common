@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PearTreeWebLtd\EventSourcererMessageUtilities\Model;
+namespace PearTreeWeb\EventSourcerer\Common\Model;
 
 enum MessageType: string
 {

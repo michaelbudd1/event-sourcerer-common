@@ -1,6 +1,6 @@
 <?php
 
-namespace PearTreeWebLtd\EventSourcererMessageUtilities\Model;
+namespace PearTreeWeb\EventSourcerer\Common\Model;
 
 trait FulfilIsInteger
 {

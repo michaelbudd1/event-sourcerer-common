@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PearTreeWebLtd\EventSourcererMessageUtilities\Factory;
+namespace PearTreeWeb\EventSourcerer\Common\Factory;
 
 final readonly class InstantiateEventFromArray
 {

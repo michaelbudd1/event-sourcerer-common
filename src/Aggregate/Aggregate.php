@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace PearTreeWebLtd\EventSourcererMessageUtilities\Aggregate;
+namespace PearTreeWeb\EventSourcerer\Common\Aggregate;
 
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\IsEvent;
+use PearTreeWeb\EventSourcerer\Common\IsEvent;
 
 abstract class Aggregate
 {

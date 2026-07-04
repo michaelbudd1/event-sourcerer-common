@@ -2,11 +2,7 @@
 
 declare(strict_types=1);
 
-namespace EventSourcerer\EventSourcererCqrs\Aggregate\Model;
-
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\IsEvent;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\StreamId;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\StreamName;
+namespace PearTreeWeb\EventSourcerer\Common\Model;
 
 interface IsAggregate
 {

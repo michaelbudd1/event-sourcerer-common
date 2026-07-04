@@ -2,10 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PearTreeWebLtd\EventSourcererMessageUtilities\Model;
-
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\FulfilIsString;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\IsString;
+namespace PearTreeWeb\EventSourcerer\Common\Model;
 
 abstract readonly class AggregateId implements IsString
 {

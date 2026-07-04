@@ -1,9 +1,9 @@
 <?php
 
-namespace EventSourcerer\EventSourcererCqrs\Repository;
+namespace PearTreeWeb\EventSourcerer\Common\Repository;
 
-use EventSourcerer\EventSourcererCqrs\Aggregate\Model\IsAggregate;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\StreamId;
+use PearTreeWeb\EventSourcerer\Common\Model\IsAggregate;
+use PearTreeWeb\EventSourcerer\Common\Model\StreamId;
 
 interface AggregateRepository
 {

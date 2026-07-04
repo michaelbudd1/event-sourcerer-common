@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace PearTreeWebLtd\EventSourcererMessageUtilities\Factory;
+namespace PearTreeWeb\EventSourcerer\Common\Factory;
 
-use PearTreeWebLtd\EventSourcererMessageUtilities\Exception\CouldNotCreateMessageType;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\MessageType;
+use PearTreeWeb\EventSourcerer\Common\Exception\CouldNotCreateMessageType;
+use PearTreeWeb\EventSourcerer\Common\MessageType;
 
 final class MessageTypeFactory
 {

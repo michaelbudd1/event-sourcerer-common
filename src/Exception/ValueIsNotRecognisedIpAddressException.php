@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PearTreeWebLtd\EventSourcererMessageUtilities\Exception;
+namespace PearTreeWeb\EventSourcerer\Common\Exception;
 
 final class ValueIsNotRecognisedIpAddressException extends \RuntimeException
 {

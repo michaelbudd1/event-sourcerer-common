@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace PearTreeWebLtd\EventSourcererMessageUtilities\Service;
+namespace PearTreeWeb\EventSourcerer\Common\Service;
 
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\ApplicationId;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\ApplicationType;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\Checkpoint;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\EventName;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\EventVersion;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\Message;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\MessageMarkup;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\MessagePattern;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\StreamId;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\WorkerId;
+use PearTreeWeb\EventSourcerer\Common\Model\ApplicationId;
+use PearTreeWeb\EventSourcerer\Common\Model\ApplicationType;
+use PearTreeWeb\EventSourcerer\Common\Model\Checkpoint;
+use PearTreeWeb\EventSourcerer\Common\Model\EventName;
+use PearTreeWeb\EventSourcerer\Common\Model\EventVersion;
+use PearTreeWeb\EventSourcerer\Common\Model\Message;
+use PearTreeWeb\EventSourcerer\Common\Model\MessageMarkup;
+use PearTreeWeb\EventSourcerer\Common\Model\MessagePattern;
+use PearTreeWeb\EventSourcerer\Common\Model\StreamId;
+use PearTreeWeb\EventSourcerer\Common\Model\WorkerId;
 
 final readonly class CreateMessage
 {

@@ -2,15 +2,14 @@
 
 declare(strict_types=1);
 
-namespace EventSourcerer\EventSourcererCqrs\Repository;
+namespace PearTreeWeb\EventSourcerer\Common\Repository;
 
-use EventSourcerer\EventSourcererCqrs\Aggregate\Model\IsAggregate;
-use EventSourcerer\EventSourcererCqrs\Factory\ReinstantiateAggregate;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\Checkpoint;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\Stream;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\StreamId;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Repository\StreamRepository;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Service\ProvideEventClassPath;
+use PearTreeWeb\EventSourcerer\Common\Factory\ReinstantiateAggregate;
+use PearTreeWeb\EventSourcerer\Common\Model\Checkpoint;
+use PearTreeWeb\EventSourcerer\Common\Model\IsAggregate;
+use PearTreeWeb\EventSourcerer\Common\Model\Stream;
+use PearTreeWeb\EventSourcerer\Common\Model\StreamId;
+use PearTreeWeb\EventSourcerer\Common\Service\ProvideEventClassPath;
 
 abstract readonly class EventSourcererAggregateRepository implements AggregateRepository
 {

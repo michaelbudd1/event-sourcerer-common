@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace EventSourcerer\EventSourcererCqrs\Aggregate\Model;
+namespace PearTreeWeb\EventSourcerer\Common\Model;
 
 trait FulfilIsAggregate
 {

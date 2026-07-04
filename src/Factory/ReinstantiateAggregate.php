@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace PearTreeWebLtd\EventSourcererMessageUtilities\Factory;
+namespace PearTreeWeb\EventSourcerer\Common\Factory;
 
-use EventSourcerer\EventSourcererCqrs\Aggregate\Model\IsAggregate;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\EventName;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\EventVersion;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Service\ProvideEventClassPath;
+use PearTreeWeb\EventSourcerer\Common\Model\EventName;
+use PearTreeWeb\EventSourcerer\Common\Model\EventVersion;
+use PearTreeWeb\EventSourcerer\Common\Model\IsAggregate;
+use PearTreeWeb\EventSourcerer\Common\Service\ProvideEventClassPath;
 
 final readonly class ReinstantiateAggregate
 {

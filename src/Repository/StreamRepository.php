@@ -1,10 +1,10 @@
 <?php
 
-namespace PearTreeWebLtd\EventSourcererMessageUtilities\Repository;
+namespace PearTreeWeb\EventSourcerer\Common\Repository;
 
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\Checkpoint;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\Stream;
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\StreamId;
+use PearTreeWeb\EventSourcerer\Common\Model\Checkpoint;
+use PearTreeWeb\EventSourcerer\Common\Model\Stream;
+use PearTreeWeb\EventSourcerer\Common\Model\StreamId;
 
 interface StreamRepository
 {

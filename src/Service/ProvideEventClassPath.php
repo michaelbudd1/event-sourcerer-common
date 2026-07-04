@@ -1,8 +1,8 @@
 <?php
 
-namespace PearTreeWebLtd\EventSourcererMessageUtilities\Service;
+namespace PearTreeWeb\EventSourcerer\Common\Service;
 
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\EventName;
+use PearTreeWeb\EventSourcerer\Common\Model\EventName;
 
 interface ProvideEventClassPath
 {

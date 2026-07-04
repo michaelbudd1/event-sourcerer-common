@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace PearTreeWebLtd\EventSourcererMessageUtilities\Exception;
+namespace PearTreeWeb\EventSourcerer\Common\Exception;
 
-use PearTreeWebLtd\EventSourcererMessageUtilities\Model\MessageType;
+use PearTreeWeb\EventSourcerer\Common\MessageType;
 
 final class CouldNotCreateMessageType extends \RuntimeException
 {

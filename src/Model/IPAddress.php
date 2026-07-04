@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace PearTreeWebLtd\EventSourcererMessageUtilities\Model;
+namespace PearTreeWeb\EventSourcerer\Common\Model;
 
-use PearTreeWebLtd\EventSourcererMessageUtilities\Exception\ValueIsNotRecognisedIpAddressException;
+use PearTreeWeb\EventSourcerer\Common\Exception\ValueIsNotRecognisedIpAddressException;
 
 final class IPAddress implements IsString
 {
