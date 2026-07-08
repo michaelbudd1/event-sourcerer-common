@@ -22,10 +22,12 @@ abstract readonly class EventSourcererAggregateRepository implements AggregateRe
 
     public function get(AggregateId $aggregateId): IsAggregate
     {
+        $aggregateClass = static::aggregateClass();
+
         return $this->reinstantiateAggregate->fromEvents(
             $this->provideEventClassPath,
-            static::class,
-            $this->streamRepository->get(self::aggregateClass()::streamId($aggregateId), Checkpoint::zero())
+            $aggregateClass,
+            $this->streamRepository->get($aggregateClass::streamId($aggregateId), Checkpoint::zero())
         );
     }
 
