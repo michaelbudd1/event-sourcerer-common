@@ -4,11 +4,12 @@ declare(strict_types=1);
 
 namespace PearTreeWeb\EventSourcerer\Common\Repository;
 
+use PearTreeWeb\EventSourcerer\Common\Aggregate\Aggregate;
 use PearTreeWeb\EventSourcerer\Common\Factory\ReinstantiateAggregate;
+use PearTreeWeb\EventSourcerer\Common\Model\AggregateId;
 use PearTreeWeb\EventSourcerer\Common\Model\Checkpoint;
 use PearTreeWeb\EventSourcerer\Common\Model\IsAggregate;
 use PearTreeWeb\EventSourcerer\Common\Model\Stream;
-use PearTreeWeb\EventSourcerer\Common\Model\StreamId;
 use PearTreeWeb\EventSourcerer\Common\Service\ProvideEventClassPath;
 
 abstract readonly class EventSourcererAggregateRepository implements AggregateRepository
@@ -19,12 +20,12 @@ abstract readonly class EventSourcererAggregateRepository implements AggregateRe
         private ProvideEventClassPath $provideEventClassPath,
     ) {}
 
-    public function get(StreamId $streamId): IsAggregate
+    public function get(AggregateId $aggregateId): IsAggregate
     {
         return $this->reinstantiateAggregate->fromEvents(
             $this->provideEventClassPath,
             static::class,
-            $this->streamRepository->get($streamId, Checkpoint::zero())
+            $this->streamRepository->get(self::aggregateClass()::streamId($aggregateId), Checkpoint::zero())
         );
     }
 
@@ -46,4 +47,9 @@ abstract readonly class EventSourcererAggregateRepository implements AggregateRe
 
         $aggregate->clearNewEvents();
     }
+
+    /**
+     * @return class-string<Aggregate>
+     */
+    abstract protected static function aggregateClass(): string;
 }
