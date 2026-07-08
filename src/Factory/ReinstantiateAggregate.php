@@ -45,7 +45,7 @@ final readonly class ReinstantiateAggregate
     {
         foreach ($aggregate->newEvents() as $rawEvent) {
             $event = InstantiateEventFromArray::with(
-                $provideEventClassPath->for(EventName::fromString($rawEvent['name'])),
+                $provideEventClassPath->for(EventName::fromString($rawEvent['event'])),
                 $rawEvent
             );
             $aggregate->applyEvent($event, $aggregate->nextVersion());
